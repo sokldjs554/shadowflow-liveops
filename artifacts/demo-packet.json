@@ -1,0 +1,1442 @@
+{
+  "run_id": "fb1c149824ba",
+  "verdict": "ready_with_approval",
+  "trace": {
+    "id": "trace-liveops-autumn-v1",
+    "title": "Synthetic live-ops event release",
+    "source": "synthetic-demo",
+    "events": [
+      {
+        "id": "evt-00",
+        "seq": 0,
+        "at": "2026-09-19T05:00:00Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "navigate",
+        "target": null,
+        "value": "/synthetic-liveops/events/new",
+        "before_hash": "ab65dcb22f999e17",
+        "after_hash": "49305500809bf939",
+        "metadata": {
+          "source_seq": 0
+        }
+      },
+      {
+        "id": "evt-01",
+        "seq": 1,
+        "at": "2026-09-19T05:00:01Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#event-name-v17",
+          "role": "textbox",
+          "accessible_name": "Event name",
+          "label": "Event name",
+          "text": null,
+          "test_id": null
+        },
+        "value": "Autumn Table Week",
+        "before_hash": "42a49a1ead2132b0",
+        "after_hash": "5df72cd8e534fb6b",
+        "metadata": {
+          "source_seq": 1
+        }
+      },
+      {
+        "id": "evt-02",
+        "seq": 2,
+        "at": "2026-09-19T05:00:02Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "select",
+        "target": {
+          "selector": "#regions-v17",
+          "role": "listbox",
+          "accessible_name": "Regions",
+          "label": "Regions",
+          "text": null,
+          "test_id": null
+        },
+        "value": [
+          "KR",
+          "JP",
+          "US"
+        ],
+        "before_hash": "01f2b825bb1df445",
+        "after_hash": "6a972b645bcf4425",
+        "metadata": {
+          "source_seq": 2
+        }
+      },
+      {
+        "id": "evt-03",
+        "seq": 3,
+        "at": "2026-09-19T05:00:03Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#locale-ko-v17",
+          "role": "textbox",
+          "accessible_name": "Korean announcement",
+          "label": "Korean announcement",
+          "text": null,
+          "test_id": null
+        },
+        "value": "가을 이벤트가 시작됩니다.",
+        "before_hash": "d2917a7692bb62bf",
+        "after_hash": "f09113d575ed96ab",
+        "metadata": {
+          "source_seq": 3
+        }
+      },
+      {
+        "id": "evt-04",
+        "seq": 4,
+        "at": "2026-09-19T05:00:04Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#locale-ja-v17",
+          "role": "textbox",
+          "accessible_name": "Japanese announcement",
+          "label": "Japanese announcement",
+          "text": null,
+          "test_id": null
+        },
+        "value": "秋のイベントが始まります。",
+        "before_hash": "416186fcef83389a",
+        "after_hash": "85bc912e51dbb0c3",
+        "metadata": {
+          "source_seq": 4
+        }
+      },
+      {
+        "id": "evt-05",
+        "seq": 5,
+        "at": "2026-09-19T05:00:05Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#locale-en-v17",
+          "role": "textbox",
+          "accessible_name": "English announcement",
+          "label": "English announcement",
+          "text": null,
+          "test_id": null
+        },
+        "value": "Autumn event is live.",
+        "before_hash": "0bb704704e4ae005",
+        "after_hash": "87868bae9d833c74",
+        "metadata": {
+          "source_seq": 5
+        }
+      },
+      {
+        "id": "evt-06",
+        "seq": 6,
+        "at": "2026-09-19T05:00:06Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#start-at-v17",
+          "role": "textbox",
+          "accessible_name": "Start time UTC",
+          "label": "Start time UTC",
+          "text": null,
+          "test_id": null
+        },
+        "value": "2026-10-01T00:00:00Z",
+        "before_hash": "7cce8586b043d504",
+        "after_hash": "7bb74175d119755c",
+        "metadata": {
+          "source_seq": 6
+        }
+      },
+      {
+        "id": "evt-07",
+        "seq": 7,
+        "at": "2026-09-19T05:00:07Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "input",
+        "target": {
+          "selector": "#end-at-v17",
+          "role": "textbox",
+          "accessible_name": "End time UTC",
+          "label": "End time UTC",
+          "text": null,
+          "test_id": null
+        },
+        "value": "2026-10-08T00:00:00Z",
+        "before_hash": "55e6261f9d7576e8",
+        "after_hash": "1c59329dc603bbca",
+        "metadata": {
+          "source_seq": 7
+        }
+      },
+      {
+        "id": "evt-08",
+        "seq": 8,
+        "at": "2026-09-19T05:00:08Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "upload",
+        "target": {
+          "selector": "#banner-v17",
+          "role": "button",
+          "accessible_name": "Choose banner",
+          "label": "Banner asset",
+          "text": null,
+          "test_id": null
+        },
+        "value": "fixtures/autumn-banner.webp",
+        "before_hash": "e562d41ce70c8069",
+        "after_hash": "cef767fd3280312c",
+        "metadata": {
+          "mime": "image/webp",
+          "synthetic": true,
+          "source_seq": 8
+        }
+      },
+      {
+        "id": "evt-09",
+        "seq": 9,
+        "at": "2026-09-19T05:00:09Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "preview",
+        "target": {
+          "selector": "#preview-v17",
+          "role": "button",
+          "accessible_name": "Preview event",
+          "label": null,
+          "text": null,
+          "test_id": null
+        },
+        "value": null,
+        "before_hash": "ad8e87f716c7e482",
+        "after_hash": "f74944edf2c91543",
+        "metadata": {
+          "source_seq": 9
+        }
+      },
+      {
+        "id": "evt-10",
+        "seq": 10,
+        "at": "2026-09-19T05:00:10Z",
+        "page": "/synthetic-liveops/events/new",
+        "action": "publish",
+        "target": {
+          "selector": "#publish-v17",
+          "role": "button",
+          "accessible_name": "Publish event",
+          "label": null,
+          "text": null,
+          "test_id": null
+        },
+        "value": null,
+        "before_hash": "9f70ad8ed4bcb5ff",
+        "after_hash": "43911c9c17545402",
+        "metadata": {
+          "source_seq": 10
+        }
+      }
+    ],
+    "redactions": []
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "summary": "Initial trace compilation",
+      "workflow": {
+        "id": "workflow-trace-liveops-autumn-v1",
+        "title": "Recorded live-ops release",
+        "purpose": "Replay a demonstrated live-ops configuration workflow without trusting brittle DOM selectors.",
+        "version": 1,
+        "compiler_route": "deterministic-demo",
+        "steps": [
+          {
+            "id": "step-01",
+            "intent": "Open page",
+            "action": "navigate",
+            "locator": null,
+            "value": "/synthetic-liveops/events/new",
+            "depends_on": [],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "none",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-00"
+            ]
+          },
+          {
+            "id": "step-02",
+            "intent": "Set Event name",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#event-name-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "Autumn Table Week",
+            "depends_on": [
+              "step-01"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-01"
+            ]
+          },
+          {
+            "id": "step-03",
+            "intent": "Choose Regions",
+            "action": "select",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#regions-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": [
+              "KR",
+              "JP",
+              "US"
+            ],
+            "depends_on": [
+              "step-02"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-02"
+            ]
+          },
+          {
+            "id": "step-04",
+            "intent": "Set Korean announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#locale-ko-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "가을 이벤트가 시작됩니다.",
+            "depends_on": [
+              "step-03"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-03"
+            ]
+          },
+          {
+            "id": "step-05",
+            "intent": "Set Japanese announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#locale-ja-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "秋のイベントが始まります。",
+            "depends_on": [
+              "step-04"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-04"
+            ]
+          },
+          {
+            "id": "step-06",
+            "intent": "Set English announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#locale-en-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "Autumn event is live.",
+            "depends_on": [
+              "step-05"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-05"
+            ]
+          },
+          {
+            "id": "step-07",
+            "intent": "Set Start time UTC",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#start-at-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "2026-10-01T00:00:00Z",
+            "depends_on": [
+              "step-06"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-06"
+            ]
+          },
+          {
+            "id": "step-08",
+            "intent": "Set End time UTC",
+            "action": "input",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#end-at-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "2026-10-08T00:00:00Z",
+            "depends_on": [
+              "step-07"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-07"
+            ]
+          },
+          {
+            "id": "step-09",
+            "intent": "Attach Choose banner",
+            "action": "upload",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#banner-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": "fixtures/autumn-banner.webp",
+            "depends_on": [
+              "step-08"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-08"
+            ]
+          },
+          {
+            "id": "step-10",
+            "intent": "Preview Preview event",
+            "action": "preview",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#preview-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": null,
+            "depends_on": [
+              "step-09"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "read",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-09"
+            ]
+          },
+          {
+            "id": "step-11",
+            "intent": "Publish Publish event",
+            "action": "publish",
+            "locator": {
+              "strategy": "selector",
+              "selector": "#publish-v17",
+              "role": null,
+              "name": null,
+              "label": null,
+              "text": null,
+              "confidence": 0.71
+            },
+            "value": null,
+            "depends_on": [
+              "step-10"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "external_write",
+            "approval_required": true,
+            "source_event_ids": [
+              "evt-10"
+            ]
+          }
+        ],
+        "warnings": [
+          "Initial compile intentionally preserves recorder selectors so shadow drift can challenge them."
+        ]
+      },
+      "shadow_runs": [
+        {
+          "variant": "baseline",
+          "workflow_version": 1,
+          "status": "pass",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "pass",
+              "detail": "Applied staged value to event_name.",
+              "resolved_target": "textbox:Event name (#event-name-v17)"
+            },
+            {
+              "step_id": "step-03",
+              "status": "pass",
+              "detail": "Applied staged value to regions.",
+              "resolved_target": "listbox:Regions (#regions-v17)"
+            },
+            {
+              "step_id": "step-04",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ko.",
+              "resolved_target": "textbox:Korean announcement (#locale-ko-v17)"
+            },
+            {
+              "step_id": "step-05",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ja.",
+              "resolved_target": "textbox:Japanese announcement (#locale-ja-v17)"
+            },
+            {
+              "step_id": "step-06",
+              "status": "pass",
+              "detail": "Applied staged value to locale_en.",
+              "resolved_target": "textbox:English announcement (#locale-en-v17)"
+            },
+            {
+              "step_id": "step-07",
+              "status": "pass",
+              "detail": "Applied staged value to start_at.",
+              "resolved_target": "textbox:Start time UTC (#start-at-v17)"
+            },
+            {
+              "step_id": "step-08",
+              "status": "pass",
+              "detail": "Applied staged value to end_at.",
+              "resolved_target": "textbox:End time UTC (#end-at-v17)"
+            },
+            {
+              "step_id": "step-09",
+              "status": "pass",
+              "detail": "Applied staged value to banner.",
+              "resolved_target": "button:Choose banner (#banner-v17)"
+            },
+            {
+              "step_id": "step-10",
+              "status": "pass",
+              "detail": "Preview contract passed in synthetic twin.",
+              "resolved_target": "button:Preview event (#preview-v17)"
+            },
+            {
+              "step_id": "step-11",
+              "status": "pass",
+              "detail": "Publish side effect simulated only after an approval boundary.",
+              "resolved_target": "button:Publish event (#publish-v17)"
+            }
+          ],
+          "failures": [],
+          "state_digest": "82bd6fe4282769c2"
+        },
+        {
+          "variant": "selector-drift-1",
+          "workflow_version": 1,
+          "status": "fail",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "fail",
+              "detail": "Could not resolve target in selector-drift-1 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "resolved_target": null
+            }
+          ],
+          "failures": [
+            {
+              "code": "target_not_found",
+              "step_id": "step-02",
+              "message": "Could not resolve target in selector-drift-1 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "evidence": {
+                "variant": "selector-drift-1",
+                "locator": {
+                  "strategy": "selector",
+                  "selector": "#event-name-v17",
+                  "role": null,
+                  "name": null,
+                  "label": null,
+                  "text": null,
+                  "confidence": 0.71
+                }
+              }
+            }
+          ],
+          "state_digest": "30ee91554fd7456c"
+        },
+        {
+          "variant": "selector-drift-2",
+          "workflow_version": 1,
+          "status": "fail",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "fail",
+              "detail": "Could not resolve target in selector-drift-2 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "resolved_target": null
+            }
+          ],
+          "failures": [
+            {
+              "code": "target_not_found",
+              "step_id": "step-02",
+              "message": "Could not resolve target in selector-drift-2 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "evidence": {
+                "variant": "selector-drift-2",
+                "locator": {
+                  "strategy": "selector",
+                  "selector": "#event-name-v17",
+                  "role": null,
+                  "name": null,
+                  "label": null,
+                  "text": null,
+                  "confidence": 0.71
+                }
+              }
+            }
+          ],
+          "state_digest": "30ee91554fd7456c"
+        },
+        {
+          "variant": "selector-drift-3",
+          "workflow_version": 1,
+          "status": "fail",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "fail",
+              "detail": "Could not resolve target in selector-drift-3 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "resolved_target": null
+            }
+          ],
+          "failures": [
+            {
+              "code": "target_not_found",
+              "step_id": "step-02",
+              "message": "Could not resolve target in selector-drift-3 with locator strategy='selector' selector='#event-name-v17' role=None name=None label=None text=None confidence=0.71.",
+              "evidence": {
+                "variant": "selector-drift-3",
+                "locator": {
+                  "strategy": "selector",
+                  "selector": "#event-name-v17",
+                  "role": null,
+                  "name": null,
+                  "label": null,
+                  "text": null,
+                  "confidence": 0.71
+                }
+              }
+            }
+          ],
+          "state_digest": "30ee91554fd7456c"
+        }
+      ],
+      "passed_variants": 1,
+      "total_variants": 4
+    },
+    {
+      "number": 2,
+      "summary": "Promote selectors to semantic accessibility locators",
+      "workflow": {
+        "id": "workflow-trace-liveops-autumn-v1",
+        "title": "Recorded live-ops release",
+        "purpose": "Replay a demonstrated live-ops configuration workflow without trusting brittle DOM selectors.",
+        "version": 2,
+        "compiler_route": "deterministic-demo",
+        "steps": [
+          {
+            "id": "step-01",
+            "intent": "Open page",
+            "action": "navigate",
+            "locator": null,
+            "value": "/synthetic-liveops/events/new",
+            "depends_on": [],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "none",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-00"
+            ]
+          },
+          {
+            "id": "step-02",
+            "intent": "Set Event name",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "Event name",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "Autumn Table Week",
+            "depends_on": [
+              "step-01"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-01"
+            ]
+          },
+          {
+            "id": "step-03",
+            "intent": "Choose Regions",
+            "action": "select",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "listbox",
+              "name": "Regions",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": [
+              "KR",
+              "JP",
+              "US"
+            ],
+            "depends_on": [
+              "step-02"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-02"
+            ]
+          },
+          {
+            "id": "step-04",
+            "intent": "Set Korean announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "Korean announcement",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "가을 이벤트가 시작됩니다.",
+            "depends_on": [
+              "step-03"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-03"
+            ]
+          },
+          {
+            "id": "step-05",
+            "intent": "Set Japanese announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "Japanese announcement",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "秋のイベントが始まります。",
+            "depends_on": [
+              "step-04"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-04"
+            ]
+          },
+          {
+            "id": "step-06",
+            "intent": "Set English announcement",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "English announcement",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "Autumn event is live.",
+            "depends_on": [
+              "step-05"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-05"
+            ]
+          },
+          {
+            "id": "step-07",
+            "intent": "Set Start time UTC",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "Start time UTC",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "2026-10-01T00:00:00Z",
+            "depends_on": [
+              "step-06"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-06"
+            ]
+          },
+          {
+            "id": "step-08",
+            "intent": "Set End time UTC",
+            "action": "input",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "textbox",
+              "name": "End time UTC",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "2026-10-08T00:00:00Z",
+            "depends_on": [
+              "step-07"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-07"
+            ]
+          },
+          {
+            "id": "step-09",
+            "intent": "Attach Choose banner",
+            "action": "upload",
+            "locator": {
+              "strategy": "label",
+              "selector": null,
+              "role": null,
+              "name": null,
+              "label": "Banner asset",
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": "fixtures/autumn-banner.webp",
+            "depends_on": [
+              "step-08"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "internal_write",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-08"
+            ]
+          },
+          {
+            "id": "step-10",
+            "intent": "Preview Preview event",
+            "action": "preview",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "button",
+              "name": "Preview event",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": null,
+            "depends_on": [
+              "step-09"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "read",
+            "approval_required": false,
+            "source_event_ids": [
+              "evt-09"
+            ]
+          },
+          {
+            "id": "step-11",
+            "intent": "Publish Publish event",
+            "action": "publish",
+            "locator": {
+              "strategy": "role_name",
+              "selector": null,
+              "role": "button",
+              "name": "Publish event",
+              "label": null,
+              "text": null,
+              "confidence": 0.96
+            },
+            "value": null,
+            "depends_on": [
+              "step-10"
+            ],
+            "preconditions": [],
+            "postconditions": [],
+            "side_effect": "external_write",
+            "approval_required": true,
+            "source_event_ids": [
+              "evt-10"
+            ]
+          }
+        ],
+        "warnings": [
+          "Initial compile intentionally preserves recorder selectors so shadow drift can challenge them.",
+          "Repaired selector drift by promoting recorded accessibility semantics to stable locators."
+        ]
+      },
+      "shadow_runs": [
+        {
+          "variant": "baseline",
+          "workflow_version": 2,
+          "status": "pass",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "pass",
+              "detail": "Applied staged value to event_name.",
+              "resolved_target": "textbox:Event name (#event-name-v17)"
+            },
+            {
+              "step_id": "step-03",
+              "status": "pass",
+              "detail": "Applied staged value to regions.",
+              "resolved_target": "listbox:Regions (#regions-v17)"
+            },
+            {
+              "step_id": "step-04",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ko.",
+              "resolved_target": "textbox:Korean announcement (#locale-ko-v17)"
+            },
+            {
+              "step_id": "step-05",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ja.",
+              "resolved_target": "textbox:Japanese announcement (#locale-ja-v17)"
+            },
+            {
+              "step_id": "step-06",
+              "status": "pass",
+              "detail": "Applied staged value to locale_en.",
+              "resolved_target": "textbox:English announcement (#locale-en-v17)"
+            },
+            {
+              "step_id": "step-07",
+              "status": "pass",
+              "detail": "Applied staged value to start_at.",
+              "resolved_target": "textbox:Start time UTC (#start-at-v17)"
+            },
+            {
+              "step_id": "step-08",
+              "status": "pass",
+              "detail": "Applied staged value to end_at.",
+              "resolved_target": "textbox:End time UTC (#end-at-v17)"
+            },
+            {
+              "step_id": "step-09",
+              "status": "pass",
+              "detail": "Applied staged value to banner.",
+              "resolved_target": "button:Choose banner (#banner-v17)"
+            },
+            {
+              "step_id": "step-10",
+              "status": "pass",
+              "detail": "Preview contract passed in synthetic twin.",
+              "resolved_target": "button:Preview event (#preview-v17)"
+            },
+            {
+              "step_id": "step-11",
+              "status": "pass",
+              "detail": "Publish side effect simulated only after an approval boundary.",
+              "resolved_target": "button:Publish event (#publish-v17)"
+            }
+          ],
+          "failures": [],
+          "state_digest": "82bd6fe4282769c2"
+        },
+        {
+          "variant": "selector-drift-1",
+          "workflow_version": 2,
+          "status": "pass",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "pass",
+              "detail": "Applied staged value to event_name.",
+              "resolved_target": "textbox:Event name (#ui-01-01)"
+            },
+            {
+              "step_id": "step-03",
+              "status": "pass",
+              "detail": "Applied staged value to regions.",
+              "resolved_target": "listbox:Regions (#ui-01-02)"
+            },
+            {
+              "step_id": "step-04",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ko.",
+              "resolved_target": "textbox:Korean announcement (#ui-01-03)"
+            },
+            {
+              "step_id": "step-05",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ja.",
+              "resolved_target": "textbox:Japanese announcement (#ui-01-04)"
+            },
+            {
+              "step_id": "step-06",
+              "status": "pass",
+              "detail": "Applied staged value to locale_en.",
+              "resolved_target": "textbox:English announcement (#ui-01-05)"
+            },
+            {
+              "step_id": "step-07",
+              "status": "pass",
+              "detail": "Applied staged value to start_at.",
+              "resolved_target": "textbox:Start time UTC (#ui-01-06)"
+            },
+            {
+              "step_id": "step-08",
+              "status": "pass",
+              "detail": "Applied staged value to end_at.",
+              "resolved_target": "textbox:End time UTC (#ui-01-07)"
+            },
+            {
+              "step_id": "step-09",
+              "status": "pass",
+              "detail": "Applied staged value to banner.",
+              "resolved_target": "button:Choose banner (#ui-01-08)"
+            },
+            {
+              "step_id": "step-10",
+              "status": "pass",
+              "detail": "Preview contract passed in synthetic twin.",
+              "resolved_target": "button:Preview event (#ui-01-09)"
+            },
+            {
+              "step_id": "step-11",
+              "status": "pass",
+              "detail": "Publish side effect simulated only after an approval boundary.",
+              "resolved_target": "button:Publish event (#ui-01-10)"
+            }
+          ],
+          "failures": [],
+          "state_digest": "82bd6fe4282769c2"
+        },
+        {
+          "variant": "selector-drift-2",
+          "workflow_version": 2,
+          "status": "pass",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "pass",
+              "detail": "Applied staged value to event_name.",
+              "resolved_target": "textbox:Event name (#ui-02-01)"
+            },
+            {
+              "step_id": "step-03",
+              "status": "pass",
+              "detail": "Applied staged value to regions.",
+              "resolved_target": "listbox:Regions (#ui-02-02)"
+            },
+            {
+              "step_id": "step-04",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ko.",
+              "resolved_target": "textbox:Korean announcement (#ui-02-03)"
+            },
+            {
+              "step_id": "step-05",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ja.",
+              "resolved_target": "textbox:Japanese announcement (#ui-02-04)"
+            },
+            {
+              "step_id": "step-06",
+              "status": "pass",
+              "detail": "Applied staged value to locale_en.",
+              "resolved_target": "textbox:English announcement (#ui-02-05)"
+            },
+            {
+              "step_id": "step-07",
+              "status": "pass",
+              "detail": "Applied staged value to start_at.",
+              "resolved_target": "textbox:Start time UTC (#ui-02-06)"
+            },
+            {
+              "step_id": "step-08",
+              "status": "pass",
+              "detail": "Applied staged value to end_at.",
+              "resolved_target": "textbox:End time UTC (#ui-02-07)"
+            },
+            {
+              "step_id": "step-09",
+              "status": "pass",
+              "detail": "Applied staged value to banner.",
+              "resolved_target": "button:Choose banner (#ui-02-08)"
+            },
+            {
+              "step_id": "step-10",
+              "status": "pass",
+              "detail": "Preview contract passed in synthetic twin.",
+              "resolved_target": "button:Preview event (#ui-02-09)"
+            },
+            {
+              "step_id": "step-11",
+              "status": "pass",
+              "detail": "Publish side effect simulated only after an approval boundary.",
+              "resolved_target": "button:Publish event (#ui-02-10)"
+            }
+          ],
+          "failures": [],
+          "state_digest": "82bd6fe4282769c2"
+        },
+        {
+          "variant": "selector-drift-3",
+          "workflow_version": 2,
+          "status": "pass",
+          "steps": [
+            {
+              "step_id": "step-01",
+              "status": "pass",
+              "detail": "Synthetic route opened.",
+              "resolved_target": null
+            },
+            {
+              "step_id": "step-02",
+              "status": "pass",
+              "detail": "Applied staged value to event_name.",
+              "resolved_target": "textbox:Event name (#ui-03-01)"
+            },
+            {
+              "step_id": "step-03",
+              "status": "pass",
+              "detail": "Applied staged value to regions.",
+              "resolved_target": "listbox:Regions (#ui-03-02)"
+            },
+            {
+              "step_id": "step-04",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ko.",
+              "resolved_target": "textbox:Korean announcement (#ui-03-03)"
+            },
+            {
+              "step_id": "step-05",
+              "status": "pass",
+              "detail": "Applied staged value to locale_ja.",
+              "resolved_target": "textbox:Japanese announcement (#ui-03-04)"
+            },
+            {
+              "step_id": "step-06",
+              "status": "pass",
+              "detail": "Applied staged value to locale_en.",
+              "resolved_target": "textbox:English announcement (#ui-03-05)"
+            },
+            {
+              "step_id": "step-07",
+              "status": "pass",
+              "detail": "Applied staged value to start_at.",
+              "resolved_target": "textbox:Start time UTC (#ui-03-06)"
+            },
+            {
+              "step_id": "step-08",
+              "status": "pass",
+              "detail": "Applied staged value to end_at.",
+              "resolved_target": "textbox:End time UTC (#ui-03-07)"
+            },
+            {
+              "step_id": "step-09",
+              "status": "pass",
+              "detail": "Applied staged value to banner.",
+              "resolved_target": "button:Choose banner (#ui-03-08)"
+            },
+            {
+              "step_id": "step-10",
+              "status": "pass",
+              "detail": "Preview contract passed in synthetic twin.",
+              "resolved_target": "button:Preview event (#ui-03-09)"
+            },
+            {
+              "step_id": "step-11",
+              "status": "pass",
+              "detail": "Publish side effect simulated only after an approval boundary.",
+              "resolved_target": "button:Publish event (#ui-03-10)"
+            }
+          ],
+          "failures": [],
+          "state_digest": "82bd6fe4282769c2"
+        }
+      ],
+      "passed_variants": 4,
+      "total_variants": 4
+    }
+  ],
+  "risks": [
+    {
+      "step_id": "step-01",
+      "side_effect": "none",
+      "approval_required": false,
+      "reason": "No durable external side effect."
+    },
+    {
+      "step_id": "step-02",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-03",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-04",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-05",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-06",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-07",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-08",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-09",
+      "side_effect": "internal_write",
+      "approval_required": false,
+      "reason": "Step mutates draft workflow state but is reversible inside the synthetic workspace."
+    },
+    {
+      "step_id": "step-10",
+      "side_effect": "read",
+      "approval_required": false,
+      "reason": "Preview reads the staged configuration without publishing it."
+    },
+    {
+      "step_id": "step-11",
+      "side_effect": "external_write",
+      "approval_required": true,
+      "reason": "Publishing changes player-visible state; shadow validation may simulate it, but live execution needs a human approval token."
+    }
+  ],
+  "generated": {
+    "name": "generated/liveops-workflow.spec.ts",
+    "language": "typescript",
+    "content": "import { test, expect } from '@playwright/test';\n\nasync function requireHumanApproval(action: string): Promise<void> {\n  const token = process.env.SHADOWFLOW_APPROVAL_TOKEN;\n  if (!token) throw new Error(`Human approval required before: ${action}`);\n}\n\ntest('compiled live-ops workflow', async ({ page }) => {\n  // step-01: Open page\n  await page.goto(\"/synthetic-liveops/events/new\");\n  // step-02: Set Event name\n  await page.getByRole(\"textbox\", { name: \"Event name\" }).fill(\"Autumn Table Week\");\n  // step-03: Choose Regions\n  await page.getByRole(\"listbox\", { name: \"Regions\" }).selectOption([\"KR\", \"JP\", \"US\"]);\n  // step-04: Set Korean announcement\n  await page.getByRole(\"textbox\", { name: \"Korean announcement\" }).fill(\"가을 이벤트가 시작됩니다.\");\n  // step-05: Set Japanese announcement\n  await page.getByRole(\"textbox\", { name: \"Japanese announcement\" }).fill(\"秋のイベントが始まります。\");\n  // step-06: Set English announcement\n  await page.getByRole(\"textbox\", { name: \"English announcement\" }).fill(\"Autumn event is live.\");\n  // step-07: Set Start time UTC\n  await page.getByRole(\"textbox\", { name: \"Start time UTC\" }).fill(\"2026-10-01T00:00:00Z\");\n  // step-08: Set End time UTC\n  await page.getByRole(\"textbox\", { name: \"End time UTC\" }).fill(\"2026-10-08T00:00:00Z\");\n  // step-09: Attach Choose banner\n  await page.getByLabel(\"Banner asset\").setInputFiles(\"fixtures/autumn-banner.webp\");\n  // step-10: Preview Preview event\n  await page.getByRole(\"button\", { name: \"Preview event\" }).click();\n  await expect(page.getByText('Preview ready')).toBeVisible();\n  // step-11: Publish Publish event\n  await requireHumanApproval(\"Publish Publish event\");\n  await page.getByRole(\"button\", { name: \"Publish event\" }).click();\n});\n",
+    "sha256": "a5b719afb6414830672671c2c646d7b85a65bc74353c22d920e60366b9ecd9c4"
+  },
+  "evidence": [
+    {
+      "claim": "Human browser actions are preserved as traceable source evidence.",
+      "status": "proven",
+      "evidence": [
+        "11 normalized events",
+        "trace_id=trace-liveops-autumn-v1"
+      ]
+    },
+    {
+      "claim": "Compiled automation still works on the recorded UI contract.",
+      "status": "proven",
+      "evidence": [
+        "final baseline shadow run -> pass"
+      ]
+    },
+    {
+      "claim": "Automation tolerates selector drift by using semantic accessibility targets.",
+      "status": "proven",
+      "evidence": [
+        "3/3 drift variants passed"
+      ]
+    },
+    {
+      "claim": "Player-visible publish cannot silently bypass a human approval boundary.",
+      "status": "needs_approval",
+      "evidence": [
+        "Publishing changes player-visible state; shadow validation may simulate it, but live execution needs a human approval token."
+      ]
+    },
+    {
+      "claim": "Generated browser code is derived from the verified workflow, not arbitrary model shell output.",
+      "status": "proven",
+      "evidence": [
+        "typed WorkflowSpec -> deterministic Playwright generator"
+      ]
+    }
+  ],
+  "limitations": [
+    "The default compiler is deterministic and exists to reproduce the pipeline; it is not an LLM-quality benchmark.",
+    "The live-ops workspace and browser traces are synthetic and do not represent GameSpring's private tools or internal process.",
+    "Shadow execution uses a typed synthetic digital twin; it does not perform real player-visible publishing.",
+    "Open-model and hosted LLM adapters are integrated behind the same schema but require the user's own endpoint/credential for real inference."
+  ],
+  "metrics": {
+    "trace_events": 11,
+    "workflow_steps": 11,
+    "attempts": 2,
+    "shadow_variants": 4,
+    "shadow_passed": 4,
+    "approval_gates": 1,
+    "pipeline_ms": 2
+  }
+}

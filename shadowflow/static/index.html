@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="ShadowFlow compiles demonstrated browser work into verified automation and tests it against UI drift before export." />
+  <title>ShadowFlow — Workflow Compiler</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">S</span><div><b>ShadowFlow</b><small>workflow compiler</small></div></div>
+      <div class="top-actions"><span id="stage-pill" class="stage-pill">idle</span><button id="run-demo" class="primary">Run demonstration</button></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">OBSERVE ONCE · COMPILE · SHADOW-TEST · APPROVE</p>
+          <h1>Turn a human web workflow into automation <em>without trusting the first replay.</em></h1>
+          <p class="lead">ShadowFlow records intent-bearing browser actions, compiles them into a typed workflow, challenges the workflow against UI drift in a synthetic twin, repairs brittle targets, then generates guarded Playwright code.</p>
+        </div>
+        <div id="source-state" class="source-card">
+          <div class="source-kicker">SYNTHETIC LIVE-OPS WORKSPACE</div>
+          <h3>Autumn Table Week</h3>
+          <p>Player-visible event configuration used only as a portfolio-safe synthetic workflow.</p>
+          <div class="mini-flow"><span>record</span><i>→</i><span>compile</span><i>→</i><span>shadow</span></div>
+        </div>
+      </section>
+
+      <section class="statusbar"><span class="pulse"></span><span id="status-line">Connecting to backend…</span></section>
+
+      <section class="metrics">
+        <article><span>recorded actions</span><strong id="metric-trace">—</strong></article>
+        <article><span>compiled steps</span><strong id="metric-steps">—</strong></article>
+        <article><span>shadow variants</span><strong id="metric-shadow">—</strong></article>
+        <article><span>human gates</span><strong id="metric-approval">—</strong></article>
+      </section>
+
+      <section class="panel recorder-panel">
+        <div class="section-head"><div><span class="num">00</span><h2>Recorder lab</h2></div><p>Optional: record the synthetic workspace yourself. The quick demo above uses the same trace schema.</p></div>
+        <div class="recorder-grid">
+          <div class="lab-form">
+            <label>Event name<input id="event-name-v17" data-role="textbox" aria-label="Event name" placeholder="Autumn Table Week" /></label>
+            <label>Regions<select id="regions-v17" data-role="listbox" aria-label="Regions" multiple>
+              <option value="KR">KR</option><option value="JP">JP</option><option value="US">US</option>
+            </select></label>
+            <label>Korean announcement<input id="locale-ko-v17" data-role="textbox" aria-label="Korean announcement" /></label>
+            <label>Japanese announcement<input id="locale-ja-v17" data-role="textbox" aria-label="Japanese announcement" /></label>
+            <label>English announcement<input id="locale-en-v17" data-role="textbox" aria-label="English announcement" /></label>
+            <label>Start time UTC<input id="start-at-v17" data-role="textbox" aria-label="Start time UTC" placeholder="2026-10-01T00:00:00Z" /></label>
+            <label>End time UTC<input id="end-at-v17" data-role="textbox" aria-label="End time UTC" placeholder="2026-10-08T00:00:00Z" /></label>
+          </div>
+          <div class="lab-actions">
+            <button id="banner-v17" data-role="button" aria-label="Choose banner" class="ghost">Attach demo banner</button>
+            <button id="preview-v17" data-role="button" aria-label="Preview event" class="ghost">Preview event</button>
+            <button id="publish-v17" data-role="button" aria-label="Publish event" class="danger-ghost">Publish event</button>
+            <div class="recorder-controls">
+              <button id="record-start" class="secondary">Start recording</button>
+              <button id="record-compile" class="secondary" disabled>Compile recorded trace</button>
+            </div>
+            <p id="recorder-status" class="recorder-status">Recorder idle. No external side effect can leave this synthetic workspace.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><span class="num">01</span><h2>Observed trace</h2></div><p>Low-level actions remain evidence. Inputs with secret-like labels are redacted before persistence.</p></div>
+        <div id="trace-grid" class="trace-grid empty">Run the demonstration to load a trace.</div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><span class="num">02</span><h2>Compiled workflow</h2></div><p>The first compile mirrors brittle selectors. Shadow failure forces the repaired workflow to promote accessibility semantics.</p></div>
+        <div id="workflow-grid" class="workflow-grid empty">No compiled workflow yet.</div>
+      </section>
+
+      <section class="split">
+        <section class="panel">
+          <div class="section-head"><div><span class="num">03</span><h2>Shadow matrix</h2></div><p>Same workflow, multiple synthetic DOM variants.</p></div>
+          <div id="matrix" class="matrix empty">No shadow run yet.</div>
+        </section>
+        <section class="panel">
+          <div class="section-head"><div><span class="num">04</span><h2>Pipeline trace</h2></div><p>Compilation and repair stages are stored as observable run events.</p></div>
+          <div id="event-log" class="event-log empty">No run events yet.</div>
+        </section>
+      </section>
+
+      <section class="panel risk-wrap">
+        <div class="section-head"><div><span class="num">05</span><h2>Side-effect boundary</h2></div><p>LLM/compiler output cannot lower the policy for a player-visible publish.</p></div>
+        <div id="risk-panel" class="risk-panel"><p>No risk decision yet.</p></div>
+        <button id="approve" class="approve" disabled>Approve generated automation</button>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><div><span class="num">06</span><h2>Evidence packet</h2></div><p>A workflow is useful only when its claims point to concrete trace, shadow, and policy evidence.</p></div>
+        <div id="evidence" class="evidence empty">No evidence yet.</div>
+      </section>
+
+      <section class="panel code-wrap">
+        <div class="section-head"><div><span class="num">07</span><h2>Generated Playwright</h2></div><p>Code is generated from the typed, verified workflow — not executed from free-form model output.</p></div>
+        <pre id="generated-code">// Generated code appears after a successful shadow run.</pre>
+      </section>
+    </main>
+
+    <footer><span>ShadowFlow v0.1 · synthetic workflow only</span><span>No real GameSpring system, player data, or private workflow is used.</span></footer>
+  </div>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

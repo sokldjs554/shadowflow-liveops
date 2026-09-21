@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadowflow-liveops"
+version = "0.1.0"
+description = "Human workflow to verified browser automation compiler with shadow execution."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn>=0.29",
+  "pydantic>=2.7",
+  "httpx>=0.27",
+  "pytest>=8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6",
+  "mypy>=1.10",
+]
+
+[project.scripts]
+shadowflow = "shadowflow.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_ignores = true
+warn_redundant_casts = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+exclude = ["synthetic_app/"]
+
+[tool.setuptools.packages.find]
+include = ["shadowflow*", "synthetic_app*"]
+exclude = ["tests*", "scripts*", "web*", "artifacts*"]
+
+[tool.setuptools.package-data]
+shadowflow = ["static/*.html", "static/*.css", "static/*.js"]

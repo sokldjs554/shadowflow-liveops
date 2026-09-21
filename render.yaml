@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: shadowflow-liveops
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install .
+    startCommand: uvicorn shadowflow.main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: SHADOWFLOW_STATE_DIR
+        value: /tmp/shadowflow
+      - key: PYTHON_VERSION
+        value: 3.12.14

@@ -1,0 +1,12 @@
+---
+description: ShadowFlow trust boundaries for AI-assisted edits
+alwaysApply: true
+---
+
+- Re-read docs/JD_TRACEABILITY.md when adding or removing a major feature.
+- Never remove shadow variants or approval gates to get a green result.
+- Do not edit evidence/test fixtures as a repair strategy unless the product contract itself changed.
+- Keep LLM providers behind the WorkflowCompiler interface.
+- The default route must run without external API keys.
+- Generated automation comes from the typed verified WorkflowSpec, not raw free-form model code.
+- Run pytest, Ruff, mypy and TypeScript typecheck before completion.

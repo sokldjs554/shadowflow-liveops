@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-09-21T00:33:38.068996+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "synthetic_contract": {
+    "trace_events": 11,
+    "selector_drift_variants": 24,
+    "semantic_drift_probe": 1
+  },
+  "selector_drift": {
+    "brittle_passes": 0,
+    "brittle_total": 24,
+    "repaired_passes": 24,
+    "repaired_total": 24
+  },
+  "semantic_drift_limit": {
+    "status": "fail",
+    "failure_codes": [
+      "target_not_found"
+    ],
+    "note": "Expected limitation: when the accessible name itself changes, the v0.1 evidence cannot safely infer the new target and abstains/fails rather than guessing."
+  },
+  "acceptance": [
+    {
+      "run": 1,
+      "verdict": "ready_with_approval",
+      "attempts": 2,
+      "final_shadow": "4/4",
+      "approval_gates": 1
+    },
+    {
+      "run": 2,
+      "verdict": "ready_with_approval",
+      "attempts": 2,
+      "final_shadow": "4/4",
+      "approval_gates": 1
+    },
+    {
+      "run": 3,
+      "verdict": "ready_with_approval",
+      "attempts": 2,
+      "final_shadow": "4/4",
+      "approval_gates": 1
+    },
+    {
+      "run": 4,
+      "verdict": "ready_with_approval",
+      "attempts": 2,
+      "final_shadow": "4/4",
+      "approval_gates": 1
+    },
+    {
+      "run": 5,
+      "verdict": "ready_with_approval",
+      "attempts": 2,
+      "final_shadow": "4/4",
+      "approval_gates": 1
+    }
+  ],
+  "pipeline_seconds": {
+    "median": 0.003,
+    "min": 0.0023,
+    "max": 0.0165
+  },
+  "generated_code": {
+    "sha256": "a5b719afb6414830672671c2c646d7b85a65bc74353c22d920e60366b9ecd9c4",
+    "uses_role_locator": true,
+    "uses_label_locator": true,
+    "contains_approval_guard": true,
+    "raw_css_locator_count": 0
+  }
+}
