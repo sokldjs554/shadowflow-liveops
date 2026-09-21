@@ -61,6 +61,7 @@ class DeterministicDemoCompiler(WorkflowCompiler):
         event_by_id = {event.id: event for event in trace.events}
         steps: list[WorkflowStep] = []
         for step in workflow.steps:
+            locator: SemanticLocator | None
             if step.id not in failed_steps or not step.source_event_ids:
                 steps.append(step)
                 continue
