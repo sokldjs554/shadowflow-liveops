@@ -1,6 +1,12 @@
 # ShadowFlow
 
+[![ci](https://github.com/sokldjs554/shadowflow-liveops/actions/workflows/ci.yml/badge.svg)](https://github.com/sokldjs554/shadowflow-liveops/actions/workflows/ci.yml)
+[![live smoke](https://github.com/sokldjs554/shadowflow-liveops/actions/workflows/live-smoke.yml/badge.svg)](https://github.com/sokldjs554/shadowflow-liveops/actions/workflows/live-smoke.yml)
+
 > **Observe a web workflow once, compile it into a typed automation, challenge it against UI drift in a shadow twin, and generate code only after deterministic verification.**
+
+**Live demo:** https://shadowflow-liveops.onrender.com  
+**Repository:** https://github.com/sokldjs554/shadowflow-liveops
 
 ShadowFlow is a full-stack AI workflow compiler. It is deliberately **not a chatbot** and **not another prompt-driven browser agent**.
 
@@ -28,6 +34,8 @@ Public browser-agent projects already cover natural-language navigation, vision-
 The default demo intentionally compiles a brittle selector-based workflow first. It must fail changed-DOM twins. The repair is allowed to use the accessibility semantics captured in the original human trace, but it cannot disable the shadow variants or the publish approval gate.
 
 ## Demo
+
+The deployed product is available at **https://shadowflow-liveops.onrender.com**. The default path is credential-free, so a reviewer can run the full compile → shadow rejection → semantic repair → code generation flow without supplying a model key.
 
 ```bash
 python -m pip install -e ".[dev]"
@@ -87,6 +95,24 @@ Measured on the current local synthetic evaluation (`artifacts/evaluation.json`)
 | Deliberate accessible-name semantic drift probe | **fails/abstains instead of guessing** |
 
 These are synthetic robustness measurements, not a claim about production browser-agent success or employee time savings. Real open-model quality has not yet been benchmarked.
+
+
+## Deployed verification
+
+A separate GitHub Actions job verifies the **actual Render deployment**, not just the repository build. It waits until `/api/release` reports the exact Git commit under review, submits the synthetic demonstration through the public API, polls the deployed run, and validates the final evidence packet.
+
+Verified deployed run for commit `824eda232c027f5142ba3ef68aa6bdd1dac8c3b2`:
+
+| Deployed check | Result |
+|---|---:|
+| Render release | **live** |
+| Final verdict | **`ready_with_approval`** |
+| Compile / repair attempts | **2** |
+| Initial shadow matrix | **1/4 passed — rejected** |
+| Repaired shadow matrix | **4/4 passed** |
+| Player-visible approval gates | **1** |
+
+The public service uses synthetic workflow data and ephemeral demo state. These results do not claim production traffic, production persistence, or real employee productivity gains.
 
 ## Documentation
 
