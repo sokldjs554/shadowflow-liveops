@@ -101,7 +101,7 @@ These are synthetic robustness measurements, not a claim about production browse
 
 A separate GitHub Actions job verifies the **actual Render deployment**, not just the repository build. It waits until `/api/release` reports the exact Git commit under review, submits the synthetic demonstration through the public API, polls the deployed run, and validates the final evidence packet.
 
-Verified deployed run for commit `824eda232c027f5142ba3ef68aa6bdd1dac8c3b2`:
+Each successful `live-smoke` run verifies that `/api/release` matches the exact Git SHA under test before exercising the public API. A verified deployed run produced:
 
 | Deployed check | Result |
 |---|---:|

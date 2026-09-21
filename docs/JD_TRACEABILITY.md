@@ -64,7 +64,7 @@ This is only a scenario choice. The repository explicitly does **not** claim Gam
 - Rechecked the target GameSpring posting requirements before closing the project gate: productivity-focused LLM tooling, full-stack web delivery with LLM/open-model integration, and AI-agent/code-generation/work-automation pipelines remain the primary fit criteria.
 - Reconfirmed the implementation evidence rather than adding a chat surface: recorded browser demonstration, typed workflow compilation, deterministic risk policy, adversarial shadow twins, repair, Playwright generation, and explicit human approval for player-visible side effects.
 - Render deployment is live at `https://shadowflow-liveops.onrender.com`.
-- The independent live-smoke workflow waited for the deployed `/api/release` commit `824eda232c027f5142ba3ef68aa6bdd1dac8c3b2`, then exercised the public API end to end.
+- The independent live-smoke workflow requires deployed `/api/release` to equal the exact `${{ github.sha }}` under test before it exercises the public API end to end.
 - Deployed result: `ready_with_approval`, 2 compile/repair attempts, initial shadow matrix 1/4, repaired matrix 4/4, approval gates 1.
 - Repository CI and live-smoke evidence are now both green. The project remains explicit that its LiveOps UI, traces, and workflows are synthetic and do not infer GameSpring's private systems.
-- Project/demo/deployment gates are complete. Application materials may be written only after the final README/documentation commit also passes CI and exact-commit live smoke.
+- Project/demo/deployment gates are complete only when the latest documentation revision itself passes CI and exact-commit live smoke.
