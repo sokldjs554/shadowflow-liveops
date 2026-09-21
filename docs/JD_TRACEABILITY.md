@@ -17,7 +17,7 @@ This file is the feature gate for the project. At each major milestone, the job 
 | Claude Code / Cursor vibe-coding workflow | `CLAUDE.md`, `AGENTS.md`, `.cursor/rules/shadowflow.mdc`, measurable completion gates | implemented |
 | Frontend and backend breadth | TypeScript product UI + Python/FastAPI backend | implemented |
 | Fast result / proof | deterministic keyless demo + tests + evaluation artifacts + GitHub Actions matrix | implemented; CI verified on Python 3.11/3.12/3.13 |
-| Solo 0→1 full-stack from planning to deployment | design/research/code/test/demo/CI prepared in one repo | public deployment pending |
+| Solo 0→1 full-stack from planning to deployment | design/research/code/test/demo/CI + Render public service + exact-commit smoke | implemented and verified |
 | Global AI documentation/trend absorption | English OSS research and provider contracts documented | implemented |
 
 ## Company-domain relevance without private-process guessing
@@ -58,3 +58,13 @@ This is only a scenario choice. The repository explicitly does **not** claim Gam
 - GitHub CI now verifies installation, tests, Ruff, mypy, strict TypeScript, and the keyless end-to-end compiler/shadow/repair/code-generation gate on Python 3.11, 3.12, and 3.13.
 - CI exposed real static-quality defects (unused imports and two typing violations). They were fixed in the implementation rather than weakening the gates.
 - Public deployment and exact-deployed-commit smoke verification remain required before application materials can be written.
+
+
+### Gate 6 — public deployment and exact-commit smoke (2026-09-21)
+- Rechecked the target GameSpring posting requirements before closing the project gate: productivity-focused LLM tooling, full-stack web delivery with LLM/open-model integration, and AI-agent/code-generation/work-automation pipelines remain the primary fit criteria.
+- Reconfirmed the implementation evidence rather than adding a chat surface: recorded browser demonstration, typed workflow compilation, deterministic risk policy, adversarial shadow twins, repair, Playwright generation, and explicit human approval for player-visible side effects.
+- Render deployment is live at `https://shadowflow-liveops.onrender.com`.
+- The independent live-smoke workflow waited for the deployed `/api/release` commit `824eda232c027f5142ba3ef68aa6bdd1dac8c3b2`, then exercised the public API end to end.
+- Deployed result: `ready_with_approval`, 2 compile/repair attempts, initial shadow matrix 1/4, repaired matrix 4/4, approval gates 1.
+- Repository CI and live-smoke evidence are now both green. The project remains explicit that its LiveOps UI, traces, and workflows are synthetic and do not infer GameSpring's private systems.
+- Project/demo/deployment gates are complete. Application materials may be written only after the final README/documentation commit also passes CI and exact-commit live smoke.
