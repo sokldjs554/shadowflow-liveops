@@ -1,0 +1,21 @@
+name: live-smoke
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deployed-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify deployed ShadowFlow
+        env:
+          BASE_URL: https://shadowflow-liveops.onrender.com
+          EXPECTED_COMMIT: ${{ github.sha }}
+          SMOKE_TIMEOUT_SECONDS: "600"
+        run: python scripts/smoke_live.py
