@@ -11,7 +11,7 @@ from shadowflow.engine.evidence import build_evidence
 from shadowflow.engine.risk import classify_workflow
 from shadowflow.engine.shadow import execute_shadow
 from shadowflow.engine.trace import normalize_bundle
-from shadowflow.models import Attempt, MergePacket, RunStage, ShadowFailure, TraceBundle
+from shadowflow.models import Attempt, MergePacket, RunStage, TraceBundle
 from shadowflow.store import RunStore
 
 
