@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 from dataclasses import asdict
+from typing import Literal
 
 from shadowflow.models import (
     ActionKind,
@@ -200,6 +201,7 @@ def execute_shadow(
             )
         )
 
+    status: Literal["pass", "fail", "approval_required"]
     if failures:
         status = "fail"
     elif saw_approval and not simulate_approval:
