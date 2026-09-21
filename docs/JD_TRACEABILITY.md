@@ -16,8 +16,8 @@ This file is the feature gate for the project. At each major milestone, the job 
 | Business-work automation | synthetic live-ops event-release workflow, no chat UI | implemented |
 | Claude Code / Cursor vibe-coding workflow | `CLAUDE.md`, `AGENTS.md`, `.cursor/rules/shadowflow.mdc`, measurable completion gates | implemented |
 | Frontend and backend breadth | TypeScript product UI + Python/FastAPI backend | implemented |
-| Fast result / proof | deterministic keyless demo + tests + evaluation artifacts | implementation done; final metrics pending |
-| Solo 0→1 full-stack from planning to deployment | design/research/code/test/demo prepared in one repo | deployment pending |
+| Fast result / proof | deterministic keyless demo + tests + evaluation artifacts + GitHub Actions matrix | implemented; CI verified on Python 3.11/3.12/3.13 |
+| Solo 0→1 full-stack from planning to deployment | design/research/code/test/demo/CI prepared in one repo | public deployment pending |
 | Global AI documentation/trend absorption | English OSS research and provider contracts documented | implemented |
 
 ## Company-domain relevance without private-process guessing
@@ -49,3 +49,12 @@ This is only a scenario choice. The repository explicitly does **not** claim Gam
 - Confirmed all three primary duties remain represented: productivity AI service/tooling, LLM/open-model full-stack web, and AI/code-generation/business-automation pipeline.
 - Confirmed all named core capabilities remain represented: Claude/Cursor-style AI coding workflow, frontend/backend breadth, and fast proof through a runnable demo.
 - Confirmed the preferred 0→1 solo full-stack story now has planning, research, implementation, tests, evaluation, CI, and Render configuration; only creation of the new GitHub remote and public deployment remain.
+
+
+### Gate 5 — GitHub CI verification (2026-09-21)
+- Re-read the currently open public GameSpring posting before treating the repository as implementation-complete. The current listing (2026-09-14 to 2026-11-13) still emphasizes the same three duties: LLM-based productivity tooling, full-stack web services combining LLM APIs/open-source models, and AI-agent/code-generation/business-automation pipelines.
+- Reconfirmed the named capability requirements: Claude Code/Cursor-style AI coding, frontend/backend breadth, and proving results quickly with AI tools.
+- Reconfirmed the preferred evidence: a solo AI full-stack project carried from planning through deployment, related technical grounding, and the ability to absorb current English AI documentation/trends.
+- GitHub CI now verifies installation, tests, Ruff, mypy, strict TypeScript, and the keyless end-to-end compiler/shadow/repair/code-generation gate on Python 3.11, 3.12, and 3.13.
+- CI exposed real static-quality defects (unused imports and two typing violations). They were fixed in the implementation rather than weakening the gates.
+- Public deployment and exact-deployed-commit smoke verification remain required before application materials can be written.
